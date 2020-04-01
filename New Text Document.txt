@@ -1,0 +1,15 @@
+Vignesh Vijayarajan12:06 PM
+https://www.ima.umn.edu/materials/2017-2018.2/W8.21-25.17/26326/3_PyomoFundamentals.pdf
+http://www.pyomo.org/documentation
+Vignesh Vijayarajan12:10 PM
+https://link.springer.com/article/10.1007/s11081-018-9411-8#Sec31
+
+# mid = int(len(x)/2)
+    # total = 0
+    # for i in range(mid):
+    #     total+= x[i]*(1-x[i+mid]/100)*(10+x[i]*-1+x[i+mid]*4)
+
+# mid = int(len(x)/2)
+    # total = 0
+    # for i in range(mid):
+    #     total+=(10+x[i]*-1+x[i+mid]*4) * x[i]*(x[i+mid]/100)
