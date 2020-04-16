@@ -1,0 +1,67 @@
+Model Spend_Optim
+
+  Variables:
+    edlp_p1 : Size=3, Index=edlp_p1_index
+        Key : Lower : Value             : Upper : Fixed : Stale : Domain
+          0 :   9.5 : 9.662662504106963 :    10 : False : False : NonNegativeReals
+          1 :   9.5 : 9.750067308806521 :    10 : False : False : NonNegativeReals
+          2 :   9.5 : 9.673818381864061 :    10 : False : False : NonNegativeReals
+    tpr_p1 : Size=3, Index=tpr_p1_index
+        Key : Lower : Value              : Upper : Fixed : Stale : Domain
+          0 :     5 :  26.27820932598918 :    50 : False : False : NonNegativeReals
+          1 :     5 : 16.105724971812275 :    50 : False : False : NonNegativeReals
+          2 :     5 : 28.743955131310692 :    50 : False : False : NonNegativeReals
+    flag_p1 : Size=3, Index=flag_p1_index
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :     0 :   1.0 :     1 : False : False : Binary
+          1 :     0 :   0.0 :     1 : False : False : Binary
+          2 :     0 :   1.0 :     1 : False : False : Binary
+    edlp_p2 : Size=3, Index=edlp_p2_index
+        Key : Lower : Value             : Upper : Fixed : Stale : Domain
+          0 :   9.5 : 9.750067308806521 :    10 : False : False : NonNegativeReals
+          1 :   9.5 : 9.750067308806521 :    10 : False : False : NonNegativeReals
+          2 :   9.5 : 9.543325410417017 :    10 : False : False : NonNegativeReals
+    tpr_p2 : Size=3, Index=tpr_p2_index
+        Key : Lower : Value             : Upper : Fixed : Stale : Domain
+          0 :     5 : 11.42964048894147 :    50 : False : False : NonNegativeReals
+          1 :     5 : 10.86070974191103 :    50 : False : False : NonNegativeReals
+          2 :     5 : 26.27820932598918 :    50 : False : False : NonNegativeReals
+    flag_p2 : Size=3, Index=flag_p2_index
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :     0 :   0.0 :     1 : False : False : Binary
+          1 :     0 :   0.0 :     1 : False : False : Binary
+          2 :     0 :   1.0 :     1 : False : False : Binary
+
+  Objectives:
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Value
+        None :   True : 5656058.269706419
+
+  Constraints:
+    c1 : Size=1
+        Key  : Lower    : Body              : Upper
+        None : 500433.0 : 500433.0000017334 : 500433.0
+    c2 : Size=1
+        Key  : Lower    : Body               : Upper
+        None : 249174.0 : 254502.69757007054 :  None
+    c3 : Size=1
+        Key  : Lower : Body               : Upper
+        None :  None : 254502.69757007054 : 304546.0
+    c4 : Size=1
+        Key  : Lower    : Body               : Upper
+        None : 201215.7 : 245930.30243166292 :  None
+    c5 : Size=1
+        Key  : Lower : Body               : Upper
+        None :  None : 245930.30243166292 : 245930.30000000002
+    c6 : Size=1
+        Key  : Lower   : Body             : Upper
+        None : 50692.8 : 76039.2007603819 :  None
+    c7 : Size=1
+        Key  : Lower : Body             : Upper
+        None :  None : 76039.2007603819 : 76039.2
+    c8 : Size=1
+        Key  : Lower   : Body             : Upper
+        None : 28420.0 : 42630.0004257922 :  None
+    c9 : Size=1
+        Key  : Lower : Body             : Upper
+        None :  None : 42630.0004257922 : 42630.0
